@@ -2,5 +2,5 @@ package com.delta.java.learn.pattern.factory.abstractFactory.generic.change.coml
 
 public interface IFactory<T> {
 
-	T createObject(Class<T> t);
+	T createObject(Class<T> t) throws Exception;
 }
