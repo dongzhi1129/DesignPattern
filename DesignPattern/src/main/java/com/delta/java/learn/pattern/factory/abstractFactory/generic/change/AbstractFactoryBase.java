@@ -10,9 +10,9 @@ public abstract class AbstractFactoryBase<T> implements AbstractFactory<T> {
 		this.mapper = mapper;
 	}
 
-	public T createObject(Class<T> t) throws Exception{
+	public T createObject(Class<T> t) throws Exception {
 		// TODO Auto-generated method stub
-		if(mapper == null || mapper.isEmpty() ||!mapper.containsKey(t)) {
+		if (mapper == null || mapper.isEmpty() || !mapper.containsKey(t)) {
 			throw new IllegalArgumentException();
 		}
 		Class<?> targetClass = mapper.get(t);
